@@ -16,7 +16,7 @@ function Details(props) {
     event.preventDefault();
     axios({
       method: "POST",
-      url: `http://localhost:8000/find/user?email=${email}`,
+      url: `${process.env.REACT_APP_PORTFOLIO}/find/user?email=${email}`,
     }).then((res) => {
       if (res.data == "User not found") {
         const personalInfo = {
