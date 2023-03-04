@@ -1,0 +1,46 @@
+.project-main-div {
+  background-color: #2f2c2c;
+  min-height: 100vh;
+}
+.project-input-box {
+  background-color: #201e1e;
+  border-radius: 12px;
+  margin: 8px;
+  width: 380px;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.project-input {
+  background-color: #272727;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #353434;
+  width: 300px;
+  height: 34px;
+  border-radius: 10px;
+}
+.project-description-input {
+  background-color: #272727;
+  font-size: 14px;
+  padding: 6px;
+  /* border: 1px solid; */
+  /* border-color: #353434; */
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+}
+.project-description-input:focus {
+  outline: none;
+}
+.project-add-btn {
+  background-color: rgb(224, 224, 224);
+  height: 32px;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin: 4px 8px;
+  color: black;
+  transition: 0.4s;
+}
+.project-add-btn:hover {
+  background-color: #cfcfcf;
+}

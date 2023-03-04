@@ -1,0 +1,38 @@
+.image-div {
+  background-color: #2f2c2c;
+  height: 100vh;
+}
+.image-input {
+  border: 2px white solid;
+  padding: 12px 4px;
+  background-color: #272727;
+  border: 1px solid;
+  border-color: #353434;
+  margin: 0px 8px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.upload-btn {
+  background-color: rgb(235, 231, 231);
+  height: 32px;
+  border-radius: 12px;
+  color: black;
+  transition: 0.4s;
+  padding: 0px 10px;
+  margin: 10px 6px;
+}
+.upload-btn:hover {
+  background-color: #cfcfcf;
+}
+.image-btn {
+  background-color: #e94d4d;
+  height: 32px;
+  border-radius: 12px;
+  color: black;
+  transition: 0.4s;
+  padding: 0px 10px;
+  margin: 10px 6px;
+}
+.image-btn:hover {
+  background-color: #e03535;
+}

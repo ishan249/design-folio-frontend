@@ -1,0 +1,15 @@
+.topNavbar {
+  display: flex;
+  justify-content: center;
+}
+.navlinks {
+  padding: 0px 52px;
+}
+@media only screen and (max-width: 600px) {
+  .navlinks {
+    padding: 0px 16px;
+  }
+}
+.navBar {
+  height: 54px;
+}

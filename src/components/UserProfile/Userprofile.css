@@ -1,0 +1,89 @@
+.userImg {
+  width: 220px;
+  height: 220px;
+  border-radius: 62px;
+}
+.userImgBox {
+  margin-top: 32px;
+}
+.firstBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.userInfo {
+  /* border: 2px black solid; */
+  margin-top: 32px;
+  width: 50%;
+  display: flex;
+  padding: 2px 8px;
+}
+.userName {
+  font-size: 36px;
+}
+.userRole {
+  background: rgb(123, 67, 151);
+  font-weight: 600;
+  font-size: 20px;
+  background: linear-gradient(
+    36deg,
+    rgba(123, 67, 151, 1) 14%,
+    rgb(235, 32, 45) 76%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.userDescription {
+  padding-top: 8px;
+}
+.skillsData {
+  /* border: 2px black solid; */
+  padding: 4px 8px;
+  margin: 4px 10px;
+  background-color: #d1d1d1;
+  border-radius: 12px;
+}
+.projectCard {
+  border-radius: 12px;
+  padding: 4px 6px;
+  margin: 8px 42px;
+  background-color: #ececec;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 300px;
+}
+.projectHeading {
+  padding-top: 30px;
+}
+.projectDescription {
+  height: 160px;
+}
+.link-btn {
+  color: white;
+  background-color: #3458dc;
+  margin: 8px;
+  padding: 6px 10px;
+  width: 68px;
+  border-radius: 8px;
+}
+.link-btn:hover {
+  background-color: #1642df;
+}
+.contactImg {
+  height: 24px;
+  width: 24px;
+}
+.linkSvg {
+  margin: 3px 8px;
+}
+.contactDiv {
+  margin: 10px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .userInfo {
+    justify-content: center;
+    width: 80%;
+    margin-top: 26px;
+  }
+}
