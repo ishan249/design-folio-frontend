@@ -17,7 +17,7 @@ function App() {
         <Route path ="/details" element={<Portfolio/>}/>
         <Route path ="/validate" element={<Validate/>}/>
         <Route path ="/usercreated" element={<Usercreated/>}/>
-        <Route path ="/:urlMail" element={<UserProfile/>}/>
+        <Route exact path ="/:urlMail" element={<UserProfile/>}/>
       </Routes>
       </BrowserRouter>
     </div>
