@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route exact path ="/" element={<Dashboard/>}/>
-        <Route path ="/getstarted" element={<MailValidation/>}/>
+        <Route exact path ="/getstarted" element={<MailValidation/>}/>
         <Route path ="/details" element={<Portfolio/>}/>
         <Route path ="/validate" element={<Validate/>}/>
         <Route path ="/usercreated" element={<Usercreated/>}/>
