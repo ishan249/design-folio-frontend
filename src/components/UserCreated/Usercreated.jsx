@@ -1,6 +1,6 @@
 import React from "react";
 import "./user.css";
-import { useLocation } from "react-router-dom";
+import { useLocation , Link} from "react-router-dom";
 function Usercreated() {
   const location = useLocation();
   const email = location.state.myProp;
@@ -14,7 +14,9 @@ function Usercreated() {
           <p className="px-4 py-2 text-md">
             Your personal portfolio is ready. Here is link, check it out{" "}
           </p>
-          <div className="text-center user-link">localhost:3000/{username}</div>
+          <Link to ={`/${username}`}>
+          <div className="text-center user-link">designfolio.onrender.com/{username}</div>
+          </Link>
         </div>
       </div>
     </div>

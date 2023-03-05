@@ -180,7 +180,7 @@ function Details(props) {
                 target="_blank"
                 className="underline"
                 rel="noreferrer"
-                href={`localhost:8000/${username}`}
+                href={`designfolio.onrender.com/${username}`}
               >
                 Click here to visit
               </a>{" "}

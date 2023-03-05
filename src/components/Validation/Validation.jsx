@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import axios from "axios";
 import "./Validation.css";
 import { ReactComponent as Svglogo } from "../../images/undraw_portfolio_update_re_jqnp.svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Loadingspinner from "../Loadingspinner/Loadingspinner";
 function Validation(props) {
@@ -11,6 +11,7 @@ function Validation(props) {
   const [otp, setOtp] = useState(0);
   const [userFound, setUserFound] = useState("");
   const [isloading, setIsLoading] = useState(false);
+  const username = mail.split("@")[0];
 
   const handleSubmit = (e) => {
     setIsLoading(true);
@@ -27,9 +28,7 @@ function Validation(props) {
           props.onSubmit(randomNum);
           setIsLoading(false);
         } else {
-          setUserFound(
-            "Looks like this Email Id is already registered. Please go through below link to visit your portfolio"
-          );
+          setUserFound("Looks like this Email Id is already registered.");
           setIsLoading(false);
         }
       })
@@ -79,7 +78,14 @@ function Validation(props) {
                   className="text-white font-poppins pt-4"
                 >
                   {" "}
-                  <span>❗❗</span> {userFound}
+                  <span>❗❗</span> {userFound} Please go through{" "}
+                  <Link to={`designfolio.onrender.com/${username}`}>
+                    {" "}
+                    <span className="underline">
+                     this link
+                    </span>{" "}
+                  </Link>
+                  to check it out.
                 </motion.div>
               ) : null}
             </form>
