@@ -19,8 +19,7 @@ function UserProfile() {
       method: "GET",
       url: `${process.env.REACT_APP_PORTFOLIO}/user/data?urlMail=${urlMail}@gmail.com`,
     })
-      .then((res) => {
-      
+      .then((res) => { 
         setFileData([res.data[0].file]);
         setUserData([res.data[0].user]);
         setLoading(false);

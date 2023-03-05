@@ -38,7 +38,7 @@ function Portfolio() {
       projects: projectsToSend,
       myFile: userImage,
     };
-
+    console.log(formData);
     axios({
       method: "POST",
       url: `${process.env.REACT_APP_PORTFOLIO}/user/create`,
@@ -48,8 +48,8 @@ function Portfolio() {
       data: formData,
     })
       .then((res) => {
-        setLoading(false);
         navigate("/usercreated", { state: { myProp: personalInfo.email } });
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
