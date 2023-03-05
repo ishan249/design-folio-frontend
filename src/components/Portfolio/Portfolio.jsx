@@ -5,8 +5,10 @@ import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import Imageupload from "../Image/Imageupload";
 import "./Portfolio.css";
+import Loadingspinner from "../Loadingspinner/Loadingspinner";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useStateManager } from "react-select";
 function Portfolio() {
   const navigate = useNavigate();
   const [personalInfo, setPersonalInfo] = useState({});
@@ -14,8 +16,9 @@ function Portfolio() {
   const [projectData, setProjectData] = useState([]);
   const [userImage, setUserImage] = useState({});
   const [currentComponent, setCurrentComponent] = useState(1);
-
+  const [isloading, setLoading] = useState(false);
   const handleCreate = (e) => {
+    setLoading(true);
     e.preventDefault();
     const projectsToSend = projectData.map((item) => ({
       projectName: item.projectName,
@@ -45,6 +48,7 @@ function Portfolio() {
       data: formData,
     })
       .then((res) => {
+        setLoading(false);
         navigate("/usercreated", { state: { myProp: personalInfo.email } });
       })
       .catch((err) => {
@@ -88,7 +92,8 @@ function Portfolio() {
                   className="generate-btn font-poppins"
                   onClick={handleCreate}
                 >
-                  Create Portfolio
+                  {isloading ? <Loadingspinner /> : <span>Create Portfolio</span>}
+
                 </button>
               </div>
             </div>

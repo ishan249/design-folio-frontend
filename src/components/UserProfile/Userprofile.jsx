@@ -11,19 +11,19 @@ import { motion } from "framer-motion";
 function UserProfile() {
   const [fileData, setFileData] = useState([]);
   const [userData, setUserData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   let { urlMail } = useParams();
 
   useEffect(() => {
-    setLoading(true);
     axios({
       method: "GET",
       url: `${process.env.REACT_APP_PORTFOLIO}/user/data?urlMail=${urlMail}@gmail.com`,
     })
       .then((res) => {
-        setLoading(false);
+      
         setFileData([res.data[0].file]);
         setUserData([res.data[0].user]);
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
