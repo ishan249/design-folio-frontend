@@ -11,14 +11,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Dashboard />} />
-          <Route path="/getstarted" element={<MailValidation />} />
-          <Route path="/details" element={<Portfolio />} />
-          <Route path="/validate" element={<Validate />} />
-          <Route path="/usercreated" element={<Usercreated />} />
-          <Route path="/:urlMail" element={<UserProfile />} />
-        </Routes>
+      <Routes>
+      <Route exact path ="/" element={<Dashboard/>}/>
+        <Route exact path ="/getstarted" element={<MailValidation/>}/>
+        <Route path ="/details" element={<Portfolio/>}/>
+        <Route path ="/validate" element={<Validate/>}/>
+        <Route path ="/usercreated" element={<Usercreated/>}/>
+        <Route path ="/:urlMail" element={<UserProfile/>}/>
+      </Routes>
       </BrowserRouter>
     </div>
   );
