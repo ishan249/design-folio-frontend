@@ -14,9 +14,9 @@ function Usercreated() {
           <p className="px-4 py-2 text-md">
             Your personal portfolio is ready. Here is link, check it out{" "}
           </p>
-          <Link to ={`designfolio.onrender.com/${username}`}>
+          <a target="_blank" href={`designfolio.onrender.com/${username}`}>
           <div className="text-center user-link">designfolio.onrender.com/{username}</div>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
