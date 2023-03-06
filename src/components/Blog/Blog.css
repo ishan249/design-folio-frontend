@@ -1,0 +1,18 @@
+.blog-main-div {
+    background-color: #2f2c2c;
+    height: 100%;
+}
+.main-div{
+    width: 920px;
+    padding: 20px 24px;
+}
+.backtohome-btn:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.Description-text{
+    font-size: 16px;
+    padding-top:10px;
+    opacity: 0.9;
+    color: white;
+}
