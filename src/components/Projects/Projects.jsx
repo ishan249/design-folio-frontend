@@ -121,7 +121,7 @@ function Projects(props) {
           />
           <br />
           <button className="project-add-btn" onClick={handleAddOption}>
-            add
+            Add to list
           </button>
           <br />
           {error!==""? <div className="p-2 font-poppins text-white"> <span>❗</span> {error}</div> :null}
