@@ -8,6 +8,7 @@ import githubImg from "../../images/github-sign.png";
 import behanceImg from "../../images/behance.png";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import {Helmet} from "react-helmet";
 function UserProfile() {
   const [fileData, setFileData] = useState([]);
   const [userData, setUserData] = useState([]);
@@ -31,6 +32,9 @@ function UserProfile() {
 
   return (
     <div style={{ backgroundColor: "white" }} className="flex justify-center">
+      {/* <Helmet>
+        <title>{userData[0].name}</title>
+      </Helmet> */}
       {loading ? (
         <Loading />
       ) : (
