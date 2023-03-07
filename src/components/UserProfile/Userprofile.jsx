@@ -14,13 +14,16 @@ function UserProfile() {
   const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState(true);
   let { urlMail } = useParams();
-
+  // this api gets the user portfolio information using route which is websitename/username (which is mailid before @)
   useEffect(() => {
     axios({
       method: "GET",
       url: `${process.env.REACT_APP_PORTFOLIO}/user/data?urlMail=${urlMail}@gmail.com`,
     })
       .then((res) => { 
+
+        // After getting response we will store it in state and then map into html tags to make it look beautiful.
+
         setFileData([res.data[0].file]);
         setUserData([res.data[0].user]);
         setLoading(false);

@@ -12,6 +12,10 @@ function Details(props) {
   const [error, setError] = useState("");
   const [wordCount, setWordCount] = useState(0);
   const username = email.split("@")[0];
+
+  // handleSubmit is a function which will store the values of every field in detail form and check if mail is registered or not.
+  // if it's new mail id then take the data, pass the data to parent component and then move to skills form
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     axios({

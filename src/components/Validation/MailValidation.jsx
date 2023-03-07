@@ -2,6 +2,8 @@ import { React, useState } from "react";
 import Validation from "./Validation";
 import Validate from "./Validate";
 function MailValidation() {
+  // Parent component of mail validation process  
+  
   const [currentComponent, setCurrentComponent] = useState(1);
   const [givenOtp, setGivenOtp] = useState(0);
 

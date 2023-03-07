@@ -36,6 +36,8 @@ function Projects(props) {
     }
   }
   
+  //Take name, description and link of project, add it to an project array and allow user to add another project.
+
 
   const handleAddOption = (event) => {
     event.preventDefault();
@@ -55,6 +57,8 @@ function Projects(props) {
       setError("Please add all fields to add project")
     }
   };
+
+  // Send all projects in projects array to parent component and move to image upload part
 
   const handleSubmit = (event) => {
     event.preventDefault();

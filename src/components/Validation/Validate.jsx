@@ -5,6 +5,9 @@ function Validate(props) {
     const navigate = useNavigate();
     const [userOtp, setUserOtp] = useState(0);
     const [error, setError] = useState("");
+
+    // check given otp is same as input otp
+
     const handleVerification = (e)=>{
         e.preventDefault();
         if(userOtp == (props.otp)){

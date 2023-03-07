@@ -8,6 +8,9 @@ function Skills(props) {
   function handleSelect(data) {
     setSelectedOptions(data);
   }
+
+  // store the labels of skills user has selected into an array, send it to a parent component and move to project sections
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (selectedOptions.length > 0) {
