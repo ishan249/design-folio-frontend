@@ -46,7 +46,6 @@ function Portfolio() {
       projects: projectsToSend,
       myFile: userImage,
     };
-    console.log(formData);
     axios({
       method: "POST",
       url: `${process.env.REACT_APP_PORTFOLIO}/user/create`,

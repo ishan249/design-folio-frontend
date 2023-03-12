@@ -18,7 +18,7 @@ function UserProfile() {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `${process.env.REACT_APP_PORTFOLIO}/user/data?urlMail=${urlMail}@gmail.com`,
+      url: `${process.env.REACT_APP_PORTFOLIO}/user/data?urlMail=${urlMail}`,
     })
       .then((res) => { 
 
