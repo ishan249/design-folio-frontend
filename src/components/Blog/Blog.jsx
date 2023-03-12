@@ -17,7 +17,6 @@ function Blog() {
             <br />
             <h1 className='text-white text-3xl'>Update</h1>
             <div className='Description-text'>There is no feature to update your portfolio so please make sure that you fill all the information correctly while creating your portfolio.</div>
-            <div className='Description-text'>Right now it is working only for @gmail.com email ids. Any other company email id or organisation email id will not work.</div>
             <br />
             <h1 className='text-white text-3xl'>Verification</h1>
             <div className='Description-text'>Your Email Id Verification is necessary to create your portfolio as we are giving everyone their unique URL. Verification will help in assigning routes and portfolio easily.</div>

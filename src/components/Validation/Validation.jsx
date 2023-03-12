@@ -54,7 +54,7 @@ function Validation(props) {
             Follow the instructions given about every field in form while
             filling the information to create good portfolio.
           </li>
-          <li className="px-2 py-2">Verify your email first to proceed.(only @gmail.com id's will work) </li>
+          <li className="px-2 py-2">Verify your email first to proceed. </li>
           <div className="email-form">
             <form onSubmit={handleSubmit}>
               <input
