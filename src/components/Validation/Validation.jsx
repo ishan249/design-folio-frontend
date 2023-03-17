@@ -79,7 +79,7 @@ function Validation(props) {
                 >
                   {" "}
                   <span>❗❗</span> {userFound} Please go through{" "}
-                  <Link to={`designfolio.onrender.com/${username}`}>
+                  <Link to={`https://designfolio.onrender.com/${username}`}>
                     {" "}
                     <span className="underline">
                      this link
